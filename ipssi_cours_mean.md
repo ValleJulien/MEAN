@@ -40,7 +40,10 @@
     + Apache VS Nginx
     . Apache = One Thread Connection
     . Nginx = EVENT LOOPS
-    ![alt tag](http://52.59.249.232/img/mean/event-loop.png)
+
+    + NPM
+    . Gestionnaire de paquets pour Node.JS
+    . Depuis la version 0.6.3 npm fait partie de l'environement Node et est donc automatiquement installé
 
 
     
