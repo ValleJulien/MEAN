@@ -58,4 +58,7 @@
 3. create at the root folder the file
     `index.js`
 
-4. feel free to add node module
+4. feel free to add node module like
+    `npm install nodemon --save-dev`
+    --save (just a dependacy)
+    -dev(dev depency)
