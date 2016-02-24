@@ -45,6 +45,8 @@
     . Gestionnaire de paquets pour Node.JS
     . Depuis la version 0.6.3 npm fait partie de l'environement Node et est donc automatiquement installé
 
+    + Express framework JS 
+
     
 ------------------------------------------------------
 # How Javascript on the server is different from Javascript on the client
