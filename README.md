@@ -49,7 +49,13 @@
 ------------------------------------------------------
 # To Start
 ------------------------------------------------------
-    + first : NVM install
-    . https://github.com/creationix/nvm for Linux Unbuntu
-    + second : in terminal launch `npm init` then follox the instruction
-    + third : create index.js
+1. install nvm, follow the link (manually or =with curl)
+    `NVM install https://github.com/creationix/nvm for Linux Unbuntu`
+
+2. in terminal launch and follow instruction to generate node env ad package.json
+    `npm init`
+
+3. create at the root folder the file
+    `index.js`
+
+4. feel free to add node module
