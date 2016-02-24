@@ -22,6 +22,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//adding middleware
+app.use(function(req, res, next) {
+    console.log('Request Method [%s]  Request URL [%s]', req.method, req.url);
+    next();
+});
+
 app.use('/', routes);
 app.use('/users', users);
 
