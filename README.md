@@ -1,17 +1,13 @@
 ------------------------------------------------------
 # To Start
 ------------------------------------------------------
-1. install nvm, follow the link (manually or =with curl)
-    `NVM install https://github.com/creationix/nvm for Linux Unbuntu`
+1. install nvm, follow the link (manually or =with curl) `NVM install https://github.com/creationix/nvm for Linux Unbuntu`
 
-2. in terminal launch and follow instruction to generate node env ad package.json
-    `npm init`
+2. in terminal launch and follow instruction to generate node env ad package.json `npm init`
 
-3. create at the root folder the file
-    `index.js`
+3. create at the root folder the file `index.js`
 
-4. feel free to add node module like
-    `npm install nodemon --save-dev`
+4. feel free to add node module like `npm install nodemon --save-dev`
     --save (just a dependacy)
     -dev(dev depency)
 
@@ -27,6 +23,8 @@
 7. install express globally with express generator
 
 8. create a new app `myApp` with the cmd `express create myApp`
+
+9. to run the express app, go to myApp folder and write `DEBUG=myApp:* npm start` in terminal
 
 
 ------------------------------------------------------
