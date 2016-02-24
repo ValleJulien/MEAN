@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var compression = require('compression');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -27,6 +29,11 @@ app.use(function(req, res, next) {
     console.log('Request Method [%s]  Request URL [%s]', req.method, req.url);
     next();
 });
+
+//another middleware for compression
+app.use(compression({
+    threshold: 1 //min size should be 1kb to compress
+}));
 
 app.use('/', routes);
 app.use('/users', users);
