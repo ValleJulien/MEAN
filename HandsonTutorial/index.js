@@ -17,14 +17,47 @@
 // greet('NPM');
 
 //Create an apache server response without the server treat a request
-var http = require("http"),
-    port = 1881;
-    var server = http.createServer(function(request, response) {
-      response.writeHeader(200, {
-        "Content-Type": "text/plain"
-      });
-      response.write("Hello HTTP! yo!!!");
-      response.end();
+// var http = require("http"),
+//     port = 1881;
+//     var server = http.createServer(function(request, response) {
+//       response.writeHeader(200, {
+//         "Content-Type": "text/plain"
+//       });
+//       response.write("Hello HTTP! yo!!!");
+//       response.end();
+//     });
+// server.listen(port);
+// console.log("Server Running on " + port + ".\nLaunch http://localhost:" + port);
+
+//Formidable implementation
+var formidable = require('formidable'),
+    http = require('http'),
+    util = require('util'),
+    port = 3663;
+
+http.createServer(function(req, res) {
+  if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
+    // parse a file upload
+    var form = new formidable.IncomingForm();
+
+    form.parse(req, function(err, fields, files) {
+      res.writeHead(200, {'content-type': 'text/plain'});
+      res.write('received upload:\n\n');
+      res.end(util.inspect({fields: fields, files: files}));
     });
-server.listen(port);
+
+    return;
+  }
+
+  // show a file upload form
+  res.writeHead(200, {'content-type': 'text/html'});
+  res.end(
+    '<form action="/upload" enctype="multipart/form-data" method="post">'+
+    '<input type="text" name="title"><br>'+
+    '<input type="file" name="upload" multiple="multiple"><br>'+
+    '<input type="submit" value="Upload">'+
+    '</form>'
+  );
+}).listen(port);
+
 console.log("Server Running on " + port + ".\nLaunch http://localhost:" + port);

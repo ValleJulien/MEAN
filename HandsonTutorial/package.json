@@ -16,5 +16,8 @@
   ],
   "author": "dev_julien, ValleJulien",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "formidable": "^1.0.17"
+  }
 }

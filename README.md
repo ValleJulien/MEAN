@@ -19,6 +19,9 @@
     `node node_modules/nodemon/bin/nodemon index.js`
     to install globally `npm install -g nodemon`
 
+5. add formidable module for parsing form data, especially file uploads (https://www.npmjs.com/package/formidable)
+    `npm install formidable --save`
+
 
 ------------------------------------------------------
 # Mongo Express Angular Node MEAN 
