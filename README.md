@@ -26,6 +26,8 @@
 
 9. to run the express app, go to myApp folder and write `DEBUG=myApp:* npm start` in terminal
 
+10. add a middleware (cf app.js line 25) 
+
 
 ------------------------------------------------------
 # Mongo Express Angular Node MEAN 

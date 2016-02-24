@@ -47,6 +47,8 @@
 
     + Express framework JS 
 
+    + Middlewares : Anything that is in between the raw request and the intended route is a Middleware. Invoked in the order they are added to the Middleware stack
+
     
 ------------------------------------------------------
 # How Javascript on the server is different from Javascript on the client
