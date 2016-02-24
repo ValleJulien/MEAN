@@ -22,6 +22,8 @@
 5. add formidable module for parsing form data, especially file uploads (https://www.npmjs.com/package/formidable)
     `npm install formidable --save`
 
+6. add express.js http://expressjs.com/ in new folder named here (SampleExpress)
+
 
 ------------------------------------------------------
 # Mongo Express Angular Node MEAN 
