@@ -63,4 +63,6 @@
     --save (just a dependacy)
     -dev(dev depency)
 
-    to run the nodemon laucnh this command (not globally installed): `node node_modules/nodemon/bin/nodemon index.js`
+    to run the nodemon laucnh this command (not globally installed): 
+    `node node_modules/nodemon/bin/nodemon index.js`
+    to install globally `npm install -g nodemon`
