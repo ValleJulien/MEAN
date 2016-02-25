@@ -1,0 +1,22 @@
+{
+  "name": "mongo-node",
+  "version": "1.0.0",
+  "description": "node, mongo db, db, npm, javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "db",
+    "db",
+    "javascript",
+    "npm"
+  ],
+  "author": "dev_julien, ValleJulien",
+  "license": "ISC",
+  "dependencies": {
+    "mongojs": "^2.3.0"
+  }
+}

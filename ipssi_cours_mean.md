@@ -79,8 +79,10 @@
     . create db `use '<name>'`
     . create collection `db.createCollection('<name>')`
     . show wich current DB is used `db`
+    . `show collections` in order to show actual collections
 
-
+    + Mongo & Node
+    . install mongojs
 
 
 ------------------------------------------------------
