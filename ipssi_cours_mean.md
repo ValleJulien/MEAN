@@ -104,3 +104,6 @@
 ------------------------------------------------------
 # Angular Js
 ------------------------------------------------------
+    + ONE-WAY DATA BINDING
+        - Data binding is a general technique that binds data sources from the provider and consumer together and synchronizes them. This is usually done with two data/information sources with different languages as in XML data binding. In UI data binding data and information objects of the same language but different logic function are bound together (e.g. Java UI elements to Java objects).
+        - In a data binding process, each data change is reflected automatically by the elements that are bound to the data. The term data binding is also used in cases where an outer representation of data in an element changes, and the underlying data is automatically updated to reflect this change. As an example, a change in a TextBox element could modify the underlying data value.
