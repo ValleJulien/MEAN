@@ -51,8 +51,36 @@
 
     
 ------------------------------------------------------
-# How Javascript on the server is different from Javascript on the client
+# How Javascript on the server is different from Javascript on the client (Node.js & MongoDB)
 ------------------------------------------------------
+    + MongoDB (from "humongous") is an open-source document database, and the leading NoSQL database. Written in C++
+    . Type : Base de données orientée documents
+    . MongoDB est un système de gestion de base de données orientée documents, répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma prédéfini des données.
+
+    + Mongo DB is NOSQL (Not Only SQL)
+    . MongoDB uses BSON as the data storage and network transfer format for "documents"
+    . Bson:
+        - Fast scan-ability
+        - Easy manipulation
+        - Additional data types
+    . SAMPLE BSON:
+        x = {
+              "_id": ObjectId("4dcd3ebc9278000000005158"),
+              "d": ISODate("2011-05-13T14:22:46.777Z"),
+              "b": BinData(0, ""),
+              "c": "aa",
+              "n": 3,
+              "e": [],
+              "n2": NumberLong(33)
+            }
+
+    + MongoDB
+    . list db `show dbs`
+    . create db `use '<name>'`
+    . create collection `db.createCollection('<name>')`
+    . show wich current DB is used `db`
+
+
 
 
 ------------------------------------------------------
