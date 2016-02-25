@@ -12,8 +12,8 @@
     </head>
     <body>
         <h1>Ok 4 me !</h1>
-        <input ng-model="movieName" placeholder="Enter your favorite movie" />
-        <h1 ng-show="movieName"> My favorite movie is {{ movieName }} ! :{</h1>
+        <input ng-model="movieName" placeholder="Enter your favorite movie"/>
+        <h2 ng-show="movieName"> My favorite movie is {{ movieName }} ! :{</h2>
         <script type="text/javascript" src="js/app.js"></script>
         <div ng-controller="GreetingController">
             {{ greeting }}
@@ -22,7 +22,11 @@
             {{ greetingBis }}
         </div>
         <div ng-controller="HomeCtrl">
-            {{ movies[1].name }}
+            <ul>
+                <li ng-repeat="movie in movies | orderBy:'name':true">
+                    <p> id: "{{movie.id}}" - name: "{{movie.name}}" - rate: "{{movie.rating}}"</p>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
