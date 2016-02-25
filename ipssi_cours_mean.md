@@ -84,6 +84,22 @@
     + Mongo & Node
     . install mongojs
 
+    + Mongo & Node & Express
+        - Scaffold an expressapp
+            . `express myApp -e` (-e install ejs)
+            . `npm install`
+            . `cd myApp && npm install`
+            . run the app:
+                `SET DEBUG=myApp:* & npm start`
+        - Add mongojs dependency
+            . `npm install --save mongojs`
+        - Dispatch a form to the client
+            . look at views `index.ejs`
+        - User fills the form and submits
+            . look at routes `index.js`
+        - We save that data to mongodb
+        - Display the data back to the user
+
 
 ------------------------------------------------------
 # How Node's evented I/O works
