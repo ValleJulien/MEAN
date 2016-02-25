@@ -4,9 +4,6 @@ var myApp = angular.module('myApp',[]);
 myApp.controller('GreetingController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
 }]);
-myApp.controller('GreetingBisController', ['$scope', function($scope) {
-    $scope.greetingBis = 'Hola Bis!';
-}]);
 
 myApp.controller("HomeCtrl", function($scope) {
     $scope.movies = [{
@@ -25,3 +22,5 @@ myApp.controller("HomeCtrl", function($scope) {
         "thumb": "https://upload.wikimedia.org/wikipedia/fr/e/e2/Jurassic_Park.png"
     }];
 });
+
+
